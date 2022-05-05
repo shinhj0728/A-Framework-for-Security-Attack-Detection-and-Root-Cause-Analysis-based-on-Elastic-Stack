@@ -1,0 +1,562 @@
+# training data
+PUT ddos-0112
+{
+  "settings": {
+    "number_of_shards": 4,
+    "number_of_replicas": 0,
+    "default_pipeline": "cic-ddos2019"
+  },
+  "mappings": {
+    "properties": {
+      "ACK Flag Count": {
+        "type": "long"
+      },
+      "Active Max": {
+        "type": "double"
+      },
+      "Active Min": {
+        "type": "double"
+      },
+      "Active Std": {
+        "type": "double"
+      },
+      "Average Packet Size": {
+        "type": "double"
+      },
+      "Avg Bwd Segment Size": {
+        "type": "double"
+      },
+      "Avg Fwd Segment Size": {
+        "type": "double"
+      },
+      "Bwd Avg Bytes/Bulk": {
+        "type": "long"
+      },
+      "Bwd Avg Packets/Bulk": {
+        "type": "long"
+      },
+      "Bwd Header Length": {
+        "type": "long"
+      },
+      "Bwd IAT Max": {
+        "type": "double"
+      },
+      "Bwd IAT Mean": {
+        "type": "double"
+      },
+      "Bwd IAT Min": {
+        "type": "double"
+      },
+      "Bwd IAT Std": {
+        "type": "double"
+      },
+      "Bwd PSH Flags": {
+        "type": "long"
+      },
+      "Bwd Packet Length Mean": {
+        "type": "double"
+      },
+      "Bwd Packet Length Min": {
+        "type": "double"
+      },
+      "Bwd Packet Length Std": {
+        "type": "double"
+      },
+      "Bwd Packets/s": {
+        "type": "double"
+      },
+      "Bwd URG Flags": {
+        "type": "long"
+      },
+      "CWE Flag Count": {
+        "type": "long"
+      },
+      "Destination IP": {
+        "type": "ip"
+      },
+      "Destination Port": {
+        "type": "long"
+      },
+      "Down/Up Ratio": {
+        "type": "double"
+      },
+      "ECE Flag Count": {
+        "type": "long"
+      },
+      "Flow Duration": {
+        "type": "long"
+      },
+      "Flow IAT Max": {
+        "type": "double"
+      },
+      "Flow IAT Mean": {
+        "type": "double"
+      },
+      "Flow IAT Min": {
+        "type": "double"
+      },
+      "Flow IAT Std": {
+        "type": "double"
+      },
+      "Flow Packets/s": {
+        "type": "double"
+      },
+      "Fwd Avg Bulk Rate": {
+        "type": "long"
+      },
+      "Fwd Avg Packets/Bulk": {
+        "type": "long"
+      },
+      "Fwd Header Length": {
+        "type": "long"
+      },
+      "Fwd Header Length_1": {
+        "type": "long"
+      },
+      "Fwd IAT Max": {
+        "type": "double"
+      },
+      "Fwd IAT Mean": {
+        "type": "double"
+      },
+      "Fwd IAT Min": {
+        "type": "double"
+      },
+      "Fwd IAT Std": {
+        "type": "double"
+      },
+      "Fwd Packet Length Max": {
+        "type": "double"
+      },
+      "Fwd Packet Length Mean": {
+        "type": "double"
+      },
+      "Fwd Packet Length Min": {
+        "type": "double"
+      },
+      "Fwd Packet Length Std": {
+        "type": "double"
+      },
+      "Fwd URG Flags": {
+        "type": "long"
+      },
+      "Idle Max": {
+        "type": "double"
+      },
+      "Idle Min": {
+        "type": "double"
+      },
+      "Idle Std": {
+        "type": "double"
+      },
+      "Inbound": {
+        "type": "long"
+      },
+      "Init_Win_bytes_backward": {
+        "type": "long"
+      },
+      "Label": {
+        "type": "keyword"
+      },
+      "Max Packet Length": {
+        "type": "double"
+      },
+      "Min Packet Length": {
+        "type": "double"
+      },
+      "PSH Flag Count": {
+        "type": "long"
+      },
+      "Packet Length Mean": {
+        "type": "double"
+      },
+      "Packet Length Std": {
+        "type": "double"
+      },
+      "Packet Length Variance": {
+        "type": "double"
+      },
+      "Protocol": {
+        "type": "long"
+      },
+      "RST Flag Count": {
+        "type": "long"
+      },
+      "SYN Flag Count": {
+        "type": "long"
+      },
+      "Source IP": {
+        "type": "ip"
+      },
+      "Source Port": {
+        "type": "long"
+      },
+      "Subflow Bwd Bytes": {
+        "type": "long"
+      },
+      "Subflow Bwd Packets": {
+        "type": "long"
+      },
+      "Subflow Fwd Bytes": {
+        "type": "long"
+      },
+      "Timestamp": {
+        "type": "keyword"
+      },
+      "Total Backward Packets": {
+        "type": "long"
+      },
+      "Total Fwd Packets": {
+        "type": "long"
+      },
+      "Total Length of Bwd Packets": {
+        "type": "double"
+      },
+      "URG Flag Count": {
+        "type": "long"
+      },
+      "act_data_pkt_fwd": {
+        "type": "long"
+      },
+      "min_seg_size_forward": {
+        "type": "long"
+      },
+      "@timestamp": {
+        "type": "date_nanos"
+      },
+      "Active Mean": {
+        "type": "double"
+      },
+      "Bwd Avg Bulk Rate": {
+        "type": "long"
+      },
+      "Bwd IAT Total": {
+        "type": "double"
+      },
+      "Bwd Packet Length Max": {
+        "type": "double"
+      },
+      "FIN Flag Count": {
+        "type": "long"
+      },
+      "Flow Bytes/s": {
+        "type": "double"
+      },
+      "Flow ID": {
+        "type": "keyword"
+      },
+      "Fwd Avg Bytes/Bulk": {
+        "type": "long"
+      },
+      "Fwd IAT Total": {
+        "type": "double"
+      },
+      "Fwd PSH Flags": {
+        "type": "long"
+      },
+      "Fwd Packets/s": {
+        "type": "double"
+      },
+      "Idle Mean": {
+        "type": "double"
+      },
+      "Init_Win_bytes_forward": {
+        "type": "long"
+      },
+      "SimillarHTTP": {
+        "type": "keyword"
+      },
+      "Subflow Fwd Packets": {
+        "type": "long"
+      },
+      "Total Length of Fwd Packets": {
+        "type": "double"
+      },
+      "Unnamed: 0": {
+        "type": "long"
+      }
+    }
+  }
+}
+
+
+# test data
+PUT ddos-0311
+{
+  "settings": {
+    "number_of_shards": 4,
+    "number_of_replicas": 0,
+    "default_pipeline": "cic-ddos2019"
+  },
+  "mappings": {
+    "properties": {
+      "ACK Flag Count": {
+        "type": "long"
+      },
+      "Active Max": {
+        "type": "double"
+      },
+      "Active Min": {
+        "type": "double"
+      },
+      "Active Std": {
+        "type": "double"
+      },
+      "Average Packet Size": {
+        "type": "double"
+      },
+      "Avg Bwd Segment Size": {
+        "type": "double"
+      },
+      "Avg Fwd Segment Size": {
+        "type": "double"
+      },
+      "Bwd Avg Bytes/Bulk": {
+        "type": "long"
+      },
+      "Bwd Avg Packets/Bulk": {
+        "type": "long"
+      },
+      "Bwd Header Length": {
+        "type": "long"
+      },
+      "Bwd IAT Max": {
+        "type": "double"
+      },
+      "Bwd IAT Mean": {
+        "type": "double"
+      },
+      "Bwd IAT Min": {
+        "type": "double"
+      },
+      "Bwd IAT Std": {
+        "type": "double"
+      },
+      "Bwd PSH Flags": {
+        "type": "long"
+      },
+      "Bwd Packet Length Mean": {
+        "type": "double"
+      },
+      "Bwd Packet Length Min": {
+        "type": "double"
+      },
+      "Bwd Packet Length Std": {
+        "type": "double"
+      },
+      "Bwd Packets/s": {
+        "type": "double"
+      },
+      "Bwd URG Flags": {
+        "type": "long"
+      },
+      "CWE Flag Count": {
+        "type": "long"
+      },
+      "Destination IP": {
+        "type": "ip"
+      },
+      "Destination Port": {
+        "type": "long"
+      },
+      "Down/Up Ratio": {
+        "type": "double"
+      },
+      "ECE Flag Count": {
+        "type": "long"
+      },
+      "Flow Duration": {
+        "type": "long"
+      },
+      "Flow IAT Max": {
+        "type": "double"
+      },
+      "Flow IAT Mean": {
+        "type": "double"
+      },
+      "Flow IAT Min": {
+        "type": "double"
+      },
+      "Flow IAT Std": {
+        "type": "double"
+      },
+      "Flow Packets/s": {
+        "type": "double"
+      },
+      "Fwd Avg Bulk Rate": {
+        "type": "long"
+      },
+      "Fwd Avg Packets/Bulk": {
+        "type": "long"
+      },
+      "Fwd Header Length": {
+        "type": "long"
+      },
+      "Fwd Header Length_1": {
+        "type": "long"
+      },
+      "Fwd IAT Max": {
+        "type": "double"
+      },
+      "Fwd IAT Mean": {
+        "type": "double"
+      },
+      "Fwd IAT Min": {
+        "type": "double"
+      },
+      "Fwd IAT Std": {
+        "type": "double"
+      },
+      "Fwd Packet Length Max": {
+        "type": "double"
+      },
+      "Fwd Packet Length Mean": {
+        "type": "double"
+      },
+      "Fwd Packet Length Min": {
+        "type": "double"
+      },
+      "Fwd Packet Length Std": {
+        "type": "double"
+      },
+      "Fwd URG Flags": {
+        "type": "long"
+      },
+      "Idle Max": {
+        "type": "double"
+      },
+      "Idle Min": {
+        "type": "double"
+      },
+      "Idle Std": {
+        "type": "double"
+      },
+      "Inbound": {
+        "type": "long"
+      },
+      "Init_Win_bytes_backward": {
+        "type": "long"
+      },
+      "Label": {
+        "type": "keyword"
+      },
+      "Max Packet Length": {
+        "type": "double"
+      },
+      "Min Packet Length": {
+        "type": "double"
+      },
+      "PSH Flag Count": {
+        "type": "long"
+      },
+      "Packet Length Mean": {
+        "type": "double"
+      },
+      "Packet Length Std": {
+        "type": "double"
+      },
+      "Packet Length Variance": {
+        "type": "double"
+      },
+      "Protocol": {
+        "type": "long"
+      },
+      "RST Flag Count": {
+        "type": "long"
+      },
+      "SYN Flag Count": {
+        "type": "long"
+      },
+      "Source IP": {
+        "type": "ip"
+      },
+      "Source Port": {
+        "type": "long"
+      },
+      "Subflow Bwd Bytes": {
+        "type": "long"
+      },
+      "Subflow Bwd Packets": {
+        "type": "long"
+      },
+      "Subflow Fwd Bytes": {
+        "type": "long"
+      },
+      "Timestamp": {
+        "type": "keyword"
+      },
+      "Total Backward Packets": {
+        "type": "long"
+      },
+      "Total Fwd Packets": {
+        "type": "long"
+      },
+      "Total Length of Bwd Packets": {
+        "type": "double"
+      },
+      "URG Flag Count": {
+        "type": "long"
+      },
+      "act_data_pkt_fwd": {
+        "type": "long"
+      },
+      "min_seg_size_forward": {
+        "type": "long"
+      },
+      "@timestamp": {
+        "type": "date_nanos"
+      },
+      "Active Mean": {
+        "type": "double"
+      },
+      "Bwd Avg Bulk Rate": {
+        "type": "long"
+      },
+      "Bwd IAT Total": {
+        "type": "double"
+      },
+      "Bwd Packet Length Max": {
+        "type": "double"
+      },
+      "FIN Flag Count": {
+        "type": "long"
+      },
+      "Flow Bytes/s": {
+        "type": "double"
+      },
+      "Flow ID": {
+        "type": "keyword"
+      },
+      "Fwd Avg Bytes/Bulk": {
+        "type": "long"
+      },
+      "Fwd IAT Total": {
+        "type": "double"
+      },
+      "Fwd PSH Flags": {
+        "type": "long"
+      },
+      "Fwd Packets/s": {
+        "type": "double"
+      },
+      "Idle Mean": {
+        "type": "double"
+      },
+      "Init_Win_bytes_forward": {
+        "type": "long"
+      },
+      "SimillarHTTP": {
+        "type": "keyword"
+      },
+      "Subflow Fwd Packets": {
+        "type": "long"
+      },
+      "Total Length of Fwd Packets": {
+        "type": "double"
+      },
+      "Unnamed: 0": {
+        "type": "long"
+      }
+    }
+  }
+}
